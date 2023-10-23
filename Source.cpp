@@ -5,7 +5,6 @@
 int main() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-    // Set color for each line
     SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
     std::cout << "Every" << "\n";
 
@@ -27,7 +26,6 @@ int main() {
     SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);
     std::cout << "\t\t\t\t\t\t\tSit" << "\n\n";
 
-    // Reset color to default
     SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 
     return 0;
